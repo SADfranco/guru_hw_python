@@ -3,7 +3,7 @@ from conftest import current_time
 
 def test_search_current_time_and_city(configuration):
     browser.open('')
-    browser.element('[name="q"]').should(be.blank).type('Текущее время').press_enter()
+    browser.element('[name="q"]').should(be.blank).type('Текущее время в Москве').press_enter()
     browser.element('[id="search"]').should(have.text(current_time()))
     browser.element('[id="search"]').should(have.text('Москва'))
 
