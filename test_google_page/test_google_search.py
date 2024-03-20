@@ -1,7 +1,6 @@
 from selene import browser, be, have
 import pytest
 from datetime import datetime
-from selenium import webdriver
 
 def current_time():
     now = datetime.now().time()
